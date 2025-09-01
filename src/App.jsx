@@ -11,6 +11,8 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminRoute from "./components/AdminRoute";
 
+export const apiUrl = "https://travel-diary-bduv.onrender.com"
+
 export default function App() {
   return (
     <BrowserRouter>

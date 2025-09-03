@@ -50,7 +50,7 @@ export default function Feed() {
       ) : posts.length === 0 ? (
         <p className="text-gray-500">No posts yet. Be the first one!</p>
       ) : (
-        <div className="grid gap-6">
+        <div className="grid  gap-6">
           {posts.map((post) => (
             <DiaryFeed key={post._id} post={post} />
           ))}

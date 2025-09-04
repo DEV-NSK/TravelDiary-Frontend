@@ -639,7 +639,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center space-x-3 text-gray-800 hover:text-blue-500 transition-colors duration-200"
+            className="flex items-center space-x-0 text-gray-800 hover:text-blue-500 transition-colors duration-200"
           >
             <div className="w-9 h-9  flex items-center justify-center">
               {/* <MapPin size={20} className="text-white" /> */}

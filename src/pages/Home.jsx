@@ -339,9 +339,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-5 py-16 md:py-24">
           <div className="text-center">
             <div className="inline-flex items-center justify-center mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg">
+              {/* <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg">
                 <MapPin size={28} className="text-white" />
-              </div>
+              </div> */}
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">

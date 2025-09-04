@@ -101,7 +101,7 @@ export default function Feed() {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-semibold mb-4">Travel Feed 🌍</h2>
+      <h2 className="text-2xl font-semibold mb-4">🌍Public Diaries...</h2>
 
       {loading ? (
         <p className="text-gray-500">Loading posts...</p>

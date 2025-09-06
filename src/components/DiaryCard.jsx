@@ -34,11 +34,6 @@
 //   );
 // }
 
-
-
-
-
-
 import { useState } from "react";
 import { apiUrl } from "../App"; // ✅ import apiUrl
 
@@ -49,7 +44,7 @@ export default function DiaryCard({ post }) {
     <div className="bg-white rounded-2xl shadow-md p-4 w-full max-w-md mx-auto">
       {post.media?.[0] && (
         <img
-          src={`${apiUrl}/uploads/${post.media[0]}`} // ✅ prepend uploads path
+          src={`${post.media[0]}`} // ✅ prepend uploads path
           alt={post.title}
           className="w-full h-48 object-cover rounded-xl mb-3"
         />

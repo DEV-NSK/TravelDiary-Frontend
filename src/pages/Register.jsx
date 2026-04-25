@@ -158,7 +158,7 @@ export default function Register() {
       // ✅ update context + localStorage
       await login(data.token, data.user);
 
-      navigate("/login");
+      navigate("/feed");
     } catch (error) {
       setErr(error.message || "Signup failed");
     }

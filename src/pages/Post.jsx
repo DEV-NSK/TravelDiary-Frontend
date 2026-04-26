@@ -13,7 +13,7 @@ import CreatePost from "../components/CreatePost";
 
 export default function Post() {
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6 min-h-screen bg-[var(--bg-primary)]">
       <CreatePost />
     </div>
   );

@@ -4,7 +4,7 @@ import { apiUrl } from "../App";
 import {
   Globe, Search, TrendingUp, PenSquare,
   Flame, Clock, Star, X, Rss, RefreshCw,
-  SlidersHorizontal, ChevronDown
+  SlidersHorizontal, ChevronDown, Heart
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";

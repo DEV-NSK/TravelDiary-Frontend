@@ -13,8 +13,7 @@ import AdminRoute from "./components/AdminRoute";
 
 import "tailwindcss"
 
-// export const apiUrl = "https://travel-diary-bduv.onrender.com"
-export const apiUrl = "http://localhost:5000"
+export const apiUrl = import.meta.env.VITE_API_BASE_URL || "https://travel-diary-ly97.onrender.com"
 
 export default function App() {
   return (

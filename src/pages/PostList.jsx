@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../services/api";
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -7,7 +7,7 @@ const PostList = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/posts");
+        const res = await api.get("/api/posts");
         setPosts(res.data);
       } catch (err) {
         console.error(err);

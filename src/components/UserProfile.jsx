@@ -144,7 +144,7 @@ export default function UserProfile() {
       });
       if (res.ok) {
         const d = await res.json();
-        setUser(prev => ({ ...prev, profileImage: d.profileImage }));
+        setUser(prev => ({ ...prev, profilePic: d.profilePic }));
         showToast("Avatar updated!");
       } else {
         showToast("Failed to upload image", "error");
@@ -218,9 +218,9 @@ export default function UserProfile() {
         <div className="absolute left-1/2 md:left-8 -translate-x-1/2 md:translate-x-0 -bottom-14 md:-bottom-16">
           <div className="relative group">
             <div className="w-28 h-28 md:w-32 md:h-32 rounded-2xl border-4 border-[var(--bg-primary)] shadow-xl overflow-hidden bg-gradient-to-br from-blue-400 to-violet-500">
-              {user.profileImage ? (
+              {user.profilePic ? (
                 <img
-                  src={user.profileImage}
+                  src={user.profilePic}
                   alt={user.name}
                   className="w-full h-full object-cover"
                   onError={(e) => { e.target.style.display = "none"; }}
